@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:wght@300,400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #a0b8ebec;
+}
+
+.titulo{
+    position: absolute;
+    min-height: 100vh;
+    padding: 10px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.container{
+   position: relative;
+   width: 1000px;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   gap: 30px;
+   flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container .serviceBox
+{
+    position: relative; 
+    width: 350px;
+    height: 280px;
+    background: #9db8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.container .serviceBox .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+
+.container .serviceBox:hover .icon
+{
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+}
+
+.container .serviceBox .icon ion-icon
+{
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.container .serviceBox:hover .icon ion-icon
+{
+    font-size: 2em;
+    transition-delay: 0s;
+}
+
+.container .serviceBox .content
+{
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 120px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.container .serviceBox:hover .content
+{
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+
+.container .serviceBox .content h1
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+

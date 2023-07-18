@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section
+{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+section .container
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: white;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+
+section .container .user
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+section .container .user .imgBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5;
+}
+
+section .container .user .imagBx      /*Editar Acudiente*/
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5;
+    background: url(Imagenes/familyanime.jpg);
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+section .container .user .imegBx        /*Editar Docente */
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5;
+    background: url(Imagenes/AshAnime.jpg);
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+section .container .user .imigBx       /*Editar Alumno */
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5;
+    background: url(Imagenes/gato.jpg);
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+section .container .user .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .container .user .formBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+section .container .user .formBx h2
+{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+section .container .user .formBx input
+{
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+section .container .user .formBx button
+{
+    max-width: 100px;
+    background: #4553a5e7;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;      
+}
+
+
+
+section .container .user .formBx .signup
+{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+
+section .container .user .formBx a
+{
+    font-weight: 600;
+    color: #557eff;
+    font-size: 12px;
+}
+
+
+section.admin{
+    background: #f2432cdc;
+}
+
+section.docente{
+    background: #838c76;
+}
+
+
+section.acudiente{
+    background: #eddda0
+}
+
+section.acudiente_registro{
+    background:#dfbfd7;
+}
+
+
+section.docente_registro{
+    background: #838c76;
+}
+
+section.alumno_registro{
+    background: #7ba4c6;
+}
+
+section.acudiente_edit{
+    background:#3f385a;
+}
+
+
+section.docente_edit{
+    background: #a0c2d6;
+}
+
+section.alumno_edit{
+    background:  #e8a069d2;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 991px)
+{
+    section .container
+    {
+        max-width: 400px;
+    }
+
+    section .container .imgBx
+    {
+        display: none;
+    }
+
+    section .container .imagBx
+    {
+        display: none;
+    }
+
+    section .container .imegBx
+    {
+        display: none;
+    }
+
+    section .container .imigBx
+    {
+        display: none;
+    }
+
+    section .container .user .formBx
+    {
+        width: 100%
+    }
+}
